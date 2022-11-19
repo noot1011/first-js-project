@@ -1,0 +1,87 @@
+body {
+  margin: 40px 0 0;
+  height: 90vh;
+  background-color: rgb(0, 0, 0);
+}
+.container {
+  position: relative;
+  left: 50px;
+  top: 10px;
+  width: 93%;
+  height: 93%;
+  background-color: #333;
+}
+.split {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  transition: all 0.9s 0s ease-out;
+}
+.split.right {
+  right: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./vi.jpg);
+  background-size: cover;
+}
+
+.split.right:hover{
+  background:linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+  url(./vi.jpg);
+  background-size: cover;
+}
+.split.left {
+  left: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url(./jinx.jpg);
+  background-size: cover;
+}
+
+.split.left:hover{
+  background:linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+  url(./jinx.jpg);
+  background-size: cover;
+}
+.text {
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 30%;
+}
+.text h1 {
+  color: #fff;
+  font-size: 50px;
+}
+.text a {
+  border: 2px solid #fff;
+  text-decoration: none;
+  color: #fff;
+  padding: 20px 50px;
+  font-size: 20px;
+}
+.text a:hover
+{
+  background-color: rgba(255, 0, 0, 0.486);
+  font-size: 25px;
+  padding: 25px 55px;
+  border: none;
+  box-shadow: 0 0 15px #cef2ff, 0 0 30px #98e4ff; 
+}
+
+.text a:first-child{
+  background-color: rgba(23, 0, 233, 0.486);
+}
+
+.hover-left .left {
+  width: 70%;
+}
+.hover-left .right {
+  width: 30%;
+}
+
+.hover-right .right {
+  width: 70%;
+}
+.hover-right .left {
+  width: 30%;
+}

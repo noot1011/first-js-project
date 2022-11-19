@@ -1,0 +1,12 @@
+body{
+    background: url(./mphone.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 50px 50px 0 50px ;
+    
+}
+
+.container{
+    background-color:rgba(0, 0, 0, 0.808);
+    height: 700px;
+}
